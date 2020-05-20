@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <label for="username">Username</label>
+      <input type="text" value="username" class="form-control" [(ngModel)]="username">
+      <p>{{username}}</p>
+      <button [disabled]="!username" (click)="onClickEvent()" class="btn btn-primary">Click Me</button>
+    </div>
+  </div>
+</div>

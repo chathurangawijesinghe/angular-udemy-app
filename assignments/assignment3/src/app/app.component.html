@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="onDisplayDetails()" >Display Details</button>
+      <p *ngIf="isDisplay" >Secret Password = Tuna</p>
+      <ul>
+        <li *ngFor="let item of items" [ngClass]="{ 'li-style' : item >= 5 }" [ngStyle]="{ 'background-color': item >= 5 ? 'blue' : 'white' }" >{{item}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
