@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-udemy-app"
+    }
+  },
+  "defaultProject": "angular-udemy-app",
+  "cli": {
+    "analytics": false
+  }
 }
